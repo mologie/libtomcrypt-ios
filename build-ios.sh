@@ -104,11 +104,11 @@ buildMath "arm64" "${IPHONEOS_GCC}" "${IPHONEOS_SDK}" ""
 buildMath "i386" "${IPHONESIMULATOR_GCC}" "${IPHONESIMULATOR_SDK}" ""
 buildMath "x86_64" "${IPHONESIMULATOR_GCC}" "${IPHONESIMULATOR_SDK}" ""
 
-buildCrypt "armv7" "${IPHONEOS_GCC}" "${IPHONEOS_SDK}" "-DLTM_DESC"
-buildCrypt "armv7s" "${IPHONEOS_GCC}" "${IPHONEOS_SDK}" "-DLTM_DESC"
-buildCrypt "arm64" "${IPHONEOS_GCC}" "${IPHONEOS_SDK}" "-DLTM_DESC"
-buildCrypt "i386" "${IPHONESIMULATOR_GCC}" "${IPHONESIMULATOR_SDK}" "-DLTM_DESC"
-buildCrypt "x86_64" "${IPHONESIMULATOR_GCC}" "${IPHONESIMULATOR_SDK}" "-DLTM_DESC"
+buildCrypt "armv7" "${IPHONEOS_GCC}" "${IPHONEOS_SDK}" ""
+buildCrypt "armv7s" "${IPHONEOS_GCC}" "${IPHONEOS_SDK}" ""
+buildCrypt "arm64" "${IPHONEOS_GCC}" "${IPHONEOS_SDK}" ""
+buildCrypt "i386" "${IPHONESIMULATOR_GCC}" "${IPHONESIMULATOR_SDK}" ""
+buildCrypt "x86_64" "${IPHONESIMULATOR_GCC}" "${IPHONESIMULATOR_SDK}" ""
 
 # Aggregate library and include files
 
