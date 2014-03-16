@@ -25,9 +25,9 @@ software, you should check if there is a more current version available.
 
 3.  `git clone --depth=1 https://github.com/mologie/libtomcrypt-ios`
 
-4.  If you are not the embedded libtomcrypt or libtomath versions, using
-    Xcode 5.1, or not using the iOS 7.1 SDK, edit `build-ios.sh` and
-    change the version numbers.
+4.  If you are not the embedded libtomcrypt or libtomath versions, not
+    using Xcode 5.1, or not using the iOS 7.1 SDK, edit `build-ios.sh`
+    and change the version numbers.
 
 5.  Edit `build-ios-tomcrypt-config.h` according to your requirements.
     **By default, only SHA1, SHA256 and RSA are enabled!** A list of
