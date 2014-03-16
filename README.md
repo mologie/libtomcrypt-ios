@@ -20,22 +20,25 @@ software, you should check if there is a more current version available.
     Please, file a bug report using this repository’s issue tracker if
     there is a more current version available.
 
-2.  `git clone --depth=1 https://github.com/mologie/libtomcrypt-ios`
+2.  Optionally, when using the embedded source files, check their
+    signature: `gpg —verify-files *.sig`
 
-3.  If you are not the embedded libtomcrypt or libtomath versions, using
+3.  `git clone --depth=1 https://github.com/mologie/libtomcrypt-ios`
+
+4.  If you are not the embedded libtomcrypt or libtomath versions, using
     Xcode 5.1, or not using the iOS 7.1 SDK, edit `build-ios.sh` and
     change the version numbers.
 
-4.  Edit `build-ios-tomcrypt-config.h` according to your requirements.
+5.  Edit `build-ios-tomcrypt-config.h` according to your requirements.
     **By default, only SHA1, SHA256 and RSA are enabled!** A list of
     configuration options is available in libtomcrypt’s
     `src/headers/tomcrypt_custom.h` and libtomcrypt’s documentation. The
     contents of the configuration file will be inserted into tomcrypt’s
     custom header file during build-time.
 
-5.  `./build-ios.h`
+6.  `./build-ios.h`
 
-6.  If everything went well, header files and library files can be found
+7.  If everything went well, header files and library files can be found
     in the same directory as the build script.
 
 
